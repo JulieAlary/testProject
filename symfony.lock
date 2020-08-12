@@ -69,6 +69,23 @@
     "doctrine/migrations": {
         "version": "3.0.1"
     },
+    "doctrine/mongodb-odm": {
+        "version": "2.1.2"
+    },
+    "doctrine/mongodb-odm-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "1fd8598bf42227a1c8905edd32f640e4c5d15eff"
+        },
+        "files": [
+            "config/packages/doctrine_mongodb.yaml",
+            "config/packages/prod/doctrine_mongodb.yaml",
+            "src/Document/.gitignore"
+        ]
+    },
     "doctrine/orm": {
         "version": "v2.7.3"
     },
@@ -83,6 +100,12 @@
     },
     "egulias/email-validator": {
         "version": "2.1.19"
+    },
+    "jean85/pretty-package-versions": {
+        "version": "1.5.0"
+    },
+    "mongodb/mongodb": {
+        "version": "1.7.0"
     },
     "monolog/monolog": {
         "version": "2.1.1"
@@ -130,6 +153,18 @@
         },
         "files": [
             "config/packages/sensio_framework_extra.yaml"
+        ]
+    },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "71599f5b0fdeeeec0fb90e9b17c85e6f5e1350c1"
+        },
+        "files": [
+            "public/.htaccess"
         ]
     },
     "symfony/asset": {
